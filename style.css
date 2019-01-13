@@ -9,12 +9,12 @@
 #tabs {
   margin-bottom: 2em;
 }
-.column a {
+/*.column a {
   color: #4a4a4a;
 }
 .column a:hover {
   color: #3273dc;
-}
+}*/
 .column p {
     margin-bottom: 1em;
 }
@@ -24,6 +24,9 @@
 }
 .small-img {
   max-width: 80%;
+}
+.title {
+  margin-bottom: 0.5em;
 }
 .skills h2, .skills ul, .skills li {
   display: inline-block;
