@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paris21</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Paris21 Application</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link href="dist/lity.css" rel="stylesheet">
-    <script src="vendor/jquery.js"></script>
     <script src="dist/lity.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
@@ -16,13 +16,13 @@ $(document).ready(function($) {
   $('.tab_content:first').show();
   $('.tabs li:first').addClass('is-active');
   $('.tabs li').click(function(event) {
+  event.preventDefault();
     $('.tabs li').removeClass('is-active');
     $(this).addClass('is-active');
     $('.tab_content').hide();
-
     var selectTab = $(this).find('a').attr("href");
-
     $(selectTab).fadeIn();
+    e.preventDefault();
   });
 });
 </script>
@@ -30,19 +30,17 @@ $(document).ready(function($) {
   <body>
   <section class="section">
     <div class="container">
-      <div class="tabs is-centered is-large" id="tabs">
+      <div class="tabs is-centered is-medium" id="tabs">
         <ul>
-          <li class="is-active"><a href="#tab1">Tweets</a></li>
+          <li><a href="#tab1">Social media</a></li>
           <li><a href="#tab2">Videos</a></li>
-          <li><a href="#tab4">Graphic design</a></li>
-          <li><a href="#tab3">Data dashboards</a></li>
+          <li><a href="#tab3">Graphic design</a></li>
+          <li><a href="#tab4">Web development</a></li>
+          <li><a href="#tab5">Data dashboards</a></li>
         </ul>
       </div>
     </div>
-    <div class="container" id="tab-content">
-
-      <div class="tab_container">
-
+    <div class="container">
       <div id="tab1" class="tab_content">
       <div class="columns">
         <div class="column">
@@ -153,68 +151,147 @@ $(document).ready(function($) {
         </div>
         </div>
       </div>
-    </div>
+      </div>
+      <div class="container">
       <div id="tab2" class="tab_content">
+        <div class="skills">
+          <h2>Tech used:</h2>
+          <ul>
+            <li>Adobe Premiere Pro</li>
+            <li>Adobe After Effects</li>
+            <li>Adobe Illustrator</li>
+          </ul>
+        </div>
         <div class="columns">
           <div class="column">
-<a href="https://www.youtube.com/watch?v=XSGBVzeBUbk" data-lity>iFrame Youtube</a>
+  <a href="https://www.youtube.com/watch?v=YK-iLUH48II" data-lity>
+  <img src="media/WEO18.jpg" alt="World Energy Outlook 2018">
+</a>
           </div>
           <div class="column">
-            <h1>World Energy Outlook 2018</h1>
-            <p>Some text here explaining what the video is and why it's annoying that the lightbox isn't working.</p>
+            <a href="https://www.youtube.com/watch?v=YK-iLUH48II" data-lity>
+            <h1 class="title">World Energy Outlook 2018</h1>
+            <p>Major transformations are underway for the global energy sector, from growing electrification to the expansion of renewables, upheavals in oil production and globalization of natural gas markets. Across all regions and fuels, policy choices made by governments will determine the shape of the energy system of the future.</p>
+          </a>
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            Photo
+  <a href="https://www.youtube.com/watch?v=WA4UkjuwRjA" data-lity>
+  <img src="media/About-the-IEA.jpg" alt="The International Energy Agency">
+</a>
           </div>
           <div class="column">
-            Text
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            Photo
-          </div>
-          <div class="column">
-            Text
+            <a href="https://www.youtube.com/watch?v=WA4UkjuwRjA" data-lity>
+            <h1 class="title">The Interntional Energy Agency</h1>
+            <p>We help governments, industry, and people make smart, secure, sustainable and affordable energy choices. </p>
+          </a>
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            Photo
+  <a href="https://www.youtube.com/watch?v=kvWfKcd0EHs" data-lity>
+  <img src="media/Petrochemicals.jpg" alt="The International Energy Agency">
+</a>
           </div>
           <div class="column">
-            Text
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            Photo
-          </div>
-          <div class="column">
-            Text
+            <a href="https://www.youtube.com/watch?v=kvWfKcd0EHs" data-lity>
+            <h1 class="title">The future of petrochemicals</h1>
+            <p>Petrochemical products are everywhere and are integral to modern societies. They include plastics, fertilisers, packaging, clothing, digital devices, medical equipment, detergents, tires and many others. They are also found in many parts of the modern energy system, including solar panels, wind turbine blades, batteries, thermal insulation for buildings, and electric vehicle parts.</p>
+            <p>The Future of Petrochemicals takes a close look at the consequences of growing demand for these products, and what we can do to accelerate a clean energy transition for the petrochemical industry.</p>
+          </a>
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            Photo
+  <a href="https://www.youtube.com/watch?v=cA5AcigRdEE" data-lity>
+  <img src="media/ev-outlook.jpg" alt="The International Energy Agency">
+</a>
           </div>
           <div class="column">
-            Text
+            <a href="https://www.youtube.com/watch?v=cA5AcigRdEE" data-lity>
+            <h1 class="title">Global Electric Vehicle Outlook 2018</h1>
+            <p>The IEA Global Electric Vehicle (EV) Outlook 2018 provides a comprehensive look at the state of EVs, charging infrastructure and policies around the globe today as well as a series of scenario outlooks to 2030.</p>
+          </a>
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            Photo
+  <a href="https://www.youtube.com/watch?v=mfNE_6ae6B4" data-lity>
+  <img src="media/renewables.jpg" alt="The International Energy Agency">
+</a>
           </div>
           <div class="column">
-            Text
+            <a href="https://www.youtube.com/watch?v=mfNE_6ae6B4" data-lity>
+            <h1 class="title">Renewables 2017: A new era for solar power</h1>
+            <p>Solar PV grew faster than any other fuel in 2016, opening a new era for solar power.</p>
+          </a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+  <a href="https://www.youtube.com/watch?v=Xo7cpdp8keI" data-lity>
+  <img src="media/energy-access.jpg" alt="The International Energy Agency">
+</a>
+          </div>
+          <div class="column">
+            <a href="https://www.youtube.com/watch?v=Xo7cpdp8keI" data-lity>
+            <h1 class="title">Energy Access 2017: Achieving energy for all by 2030</h1>
+            <p>Energy Access Outlook 2017 shows how achieving energy for all by 2030 is possible. And the benefits far outweigh the costs.</p>
+          </a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+  <a href="https://www.youtube.com/watch?v=Bekuis8ovUM" data-lity>
+  <img src="media/energy-efficiency.jpg" alt="The International Energy Agency">
+</a>
+          </div>
+          <div class="column">
+            <a href="https://www.youtube.com/watch?v=Bekuis8ovUM" data-lity>
+            <h1 class="title">The multiple benefits of energy efficiency</h1>
+            <p>International experts on the multiple benefits of energy efficiency share their views.</p>
+          </a>
           </div>
         </div>
   </div>
-  </div>
+</div>
+    <div class="container">
+  <div id="tab3" class="tab_content">
+    <div class="skills">
+      <h2>Tech used:</h2>
+      <ul>
+        <li>Adobe InDesign</li>
+      </ul>
     </div>
+    <div class="columns">
+      <div class="column">
+<a href="https://www.iea.org/media/topics/climatechange/IEA-COP24-brochure.pdf" target="_blank">
+<img class="small-img centered" src="media/cop24-brochure.jpg" alt="COP24 Brochure">
+</a>
+      </div>
+      <div class="column">
+        <a href="https://www.iea.org/media/topics/climatechange/IEA-COP24-brochure.pdf" target="_blank">
+        <h1 class="title">COP24 brochure</h1>
+        <p>Major transformations are underway for the global energy sector, from growing electrification to the expansion of renewables, upheavals in oil production and globalization of natural gas markets. Across all regions and fuels, policy choices made by governments will determine the shape of the energy system of the future.</p>
+      </a>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+<a href="https://www.iea.org/media/topics/climatechange/IEA-COP24-brochure.pdf" target="_blank">
+<img class="small-img centered" src="media/cop24-brochure.jpg" alt="COP24 Brochure">
+</a>
+      </div>
+      <div class="column">
+        <a href="https://www.iea.org/media/topics/climatechange/IEA-COP24-brochure.pdf" target="_blank">
+        <h1 class="title">Digitalization & Energy cover</h1>
+        <p>Major transformations are underway for the global energy sector, from growing electrification to the expansion of renewables, upheavals in oil production and globalization of natural gas markets. Across all regions and fuels, policy choices made by governments will determine the shape of the energy system of the future.</p>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
   </body>
 </html>
