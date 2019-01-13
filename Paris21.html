@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paris21</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link href="dist/lity.css" rel="stylesheet">
+    <script src="vendor/jquery.js"></script>
+    <script src="dist/lity.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+  $('.tab_content').hide();
+  $('.tab_content:first').show();
+  $('.tabs li:first').addClass('is-active');
+  $('.tabs li').click(function(event) {
+    $('.tabs li').removeClass('is-active');
+    $(this).addClass('is-active');
+    $('.tab_content').hide();
+
+    var selectTab = $(this).find('a').attr("href");
+
+    $(selectTab).fadeIn();
+  });
+});
+</script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <div class="tabs is-centered is-large" id="tabs">
+        <ul>
+          <li class="is-active"><a href="#tab1">Tweets</a></li>
+          <li><a href="#tab2">Videos</a></li>
+          <li><a href="#tab4">Graphic design</a></li>
+          <li><a href="#tab3">Data dashboards</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" id="tab-content">
+
+      <div class="tab_container">
+
+      <div id="tab1" class="tab_content">
+      <div class="columns">
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">70% of Denmark’s electricity generation is expected to come from variable <a href="https://twitter.com/hashtag/renewables?src=hash&amp;ref_src=twsrc%5Etfw">#renewables</a> by 2022 <a href="https://t.co/VaJWUG18vZ">https://t.co/VaJWUG18vZ</a> <a href="https://t.co/jmxnjPrPTt">pic.twitter.com/jmxnjPrPTt</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/984004669591687168?ref_src=twsrc%5Etfw">April 11, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">39% of all new cars sold in Norway 🇳🇴 in 2017 were electric, giving the country the largest market share of electric cars in the world. Iceland 🇮🇸 follows at 11.7%, then Sweden 🇸🇪 at 6.3% <a href="https://t.co/B8tm9ZSOMz">https://t.co/B8tm9ZSOMz</a> <a href="https://t.co/BzEVD6gQZS">pic.twitter.com/BzEVD6gQZS</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1013715800266563584?ref_src=twsrc%5Etfw">July 2, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Renewable?src=hash&amp;ref_src=twsrc%5Etfw">#Renewable</a> electricity will grow more than a third by 2022, twice as large as the growth of gas &amp; coal combined: <a href="https://t.co/V3EL8RjGFx">https://t.co/V3EL8RjGFx</a> <a href="https://t.co/op0pEa6ltm">pic.twitter.com/op0pEa6ltm</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/949961453037150208?ref_src=twsrc%5Etfw">January 7, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>=
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">70,000 <a href="https://twitter.com/hashtag/solar?src=hash&amp;ref_src=twsrc%5Etfw">#solar</a> panels will be installed every hour 🕒 around the world over the next 5 years. Read more 👉 <a href="https://t.co/NyWkULNQiG">https://t.co/NyWkULNQiG</a> <a href="https://t.co/IAH1brMHYi">pic.twitter.com/IAH1brMHYi</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/948872125909217280?ref_src=twsrc%5Etfw">January 4, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    <div class="columns">
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There’s no single pathway for how the world will use energy in the coming decades. <a href="https://twitter.com/hashtag/WEO18?src=hash&amp;ref_src=twsrc%5Etfw">#WEO18</a> explores these potential futures &amp; the actions that could bring them about.<br> <br>643 pages is a lot, so here’s what we’ve found in tweet &amp; video form. For more: <a href="https://t.co/IPFeDMrcfK">https://t.co/IPFeDMrcfK</a> <a href="https://t.co/76w6vjMC6k">pic.twitter.com/76w6vjMC6k</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1062260414535401472?ref_src=twsrc%5Etfw">November 13, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Renewables 2018 identifies modern bioenergy as the overlooked giant of the <a href="https://twitter.com/hashtag/renewableenergy?src=hash&amp;ref_src=twsrc%5Etfw">#renewableenergy</a> field.<br><br>Its share in global total <a href="https://twitter.com/hashtag/renewables?src=hash&amp;ref_src=twsrc%5Etfw">#renewables</a> consumption is about 50% today – as much as hydro 🌊, wind 🌬, solar ☀ &amp; all other renewables combined. Learn more 👉 <a href="https://t.co/wT2Sf2cGkv">https://t.co/wT2Sf2cGkv</a> <a href="https://t.co/pJa00I15ru">pic.twitter.com/pJa00I15ru</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1049211796085772293?ref_src=twsrc%5Etfw">October 8, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/LED?src=hash&amp;ref_src=twsrc%5Etfw">#LED</a> lighting saved 110 TWh last year, equivalent to half the growth in global <a href="https://twitter.com/hashtag/electricity?src=hash&amp;ref_src=twsrc%5Etfw">#electricity</a> generation <a href="https://t.co/qRLIrozP9R">https://t.co/qRLIrozP9R</a> <a href="https://twitter.com/hashtag/EEMR16?src=hash&amp;ref_src=twsrc%5Etfw">#EEMR16</a> <a href="https://t.co/V4XrpXpMNb">pic.twitter.com/V4XrpXpMNb</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/793439962687504384?ref_src=twsrc%5Etfw">November 1, 2016</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Wind energy is set to become the EU&#39;s largest power source in the late 2020s, overtaking coal, nuclear &amp; gas.<br><br>Explore more findings from <a href="https://twitter.com/hashtag/WEO18?src=hash&amp;ref_src=twsrc%5Etfw">#WEO18</a> 👉 <a href="https://t.co/aTHlEQLGJd">https://t.co/aTHlEQLGJd</a> <a href="https://t.co/ppaf6d0mqS">pic.twitter.com/ppaf6d0mqS</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1064156607041417218?ref_src=twsrc%5Etfw">November 18, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The US power sector has led world in cutting CO2 emissions since 2008, thanks largely to natural gas displacing coal <a href="https://t.co/GTvgMdqSdp">https://t.co/GTvgMdqSdp</a> <a href="https://t.co/E6nhWvVsUm">pic.twitter.com/E6nhWvVsUm</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/832247677899399169?ref_src=twsrc%5Etfw">February 16, 2017</a></blockquote>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Energy Access Outlook 2017 shows how achieving energy for all by 2030 is possible <a href="https://t.co/04vvz5p2EZ">https://t.co/04vvz5p2EZ</a> <a href="https://twitter.com/hashtag/SDG7?src=hash&amp;ref_src=twsrc%5Etfw">#SDG7</a> <a href="https://t.co/GZOGJ9RIKX">pic.twitter.com/GZOGJ9RIKX</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1031545393321062401?ref_src=twsrc%5Etfw">August 20, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Internet traffic has tripled in only the past 5 years &amp; around 90% of the data in the world today were created over the past 2 years. Processing, transmitting &amp; storing all this data requires energy <a href="https://t.co/sVbBcTQbAi">https://t.co/sVbBcTQbAi</a> <a href="https://t.co/RgrQugsY9i">pic.twitter.com/RgrQugsY9i</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/979078241163055104?ref_src=twsrc%5Etfw">March 28, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Solar PV capacity grew by 50% in 2016, to become the world’s fastest growing source of power <a href="https://t.co/9xxmLr0CqL">https://t.co/9xxmLr0CqL</a> <a href="https://t.co/NHnONLS8P1">pic.twitter.com/NHnONLS8P1</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/949313315771166721?ref_src=twsrc%5Etfw">January 5, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">3 in 5 people living in sub-Saharan Africa (around 600m people) will still be without electricity access unless commitments made &amp; successes achieved in some countries are spread across the continent <a href="https://twitter.com/hashtag/SDG7?src=hash&amp;ref_src=twsrc%5Etfw">#SDG7</a> <a href="https://twitter.com/hashtag/GlobalGoals?src=hash&amp;ref_src=twsrc%5Etfw">#GlobalGoals</a> <a href="https://t.co/l1I2B0NuhS">https://t.co/l1I2B0NuhS</a> <a href="https://t.co/9jhvO1yUDi">pic.twitter.com/9jhvO1yUDi</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/994550139715907584?ref_src=twsrc%5Etfw">May 10, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Check out our all-new country pages - with key energy stats on 120+ countries! 🌎📈📉 <a href="https://t.co/TUo0IgrvPe">https://t.co/TUo0IgrvPe</a> <a href="https://t.co/ytNUJf8Mq0">pic.twitter.com/ytNUJf8Mq0</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1044875857100189697?ref_src=twsrc%5Etfw">September 26, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We&#39;ve overhauled our statistics website - putting free data and stats across all fuels for 120+ countries at your fingertips 🌍📈 <br><br>Try it out today 👉 <a href="https://t.co/jI3JC5c4Rt">https://t.co/jI3JC5c4Rt</a> <a href="https://t.co/av9nwojRpw">pic.twitter.com/av9nwojRpw</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1051747933467672576?ref_src=twsrc%5Etfw">October 15, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">By 2022, renewable electricity gen. will reach 8,000TWh = total power consumption of China, India &amp; Germany combined <a href="https://t.co/TOLE7t9Rch">https://t.co/TOLE7t9Rch</a> <a href="https://t.co/XlofmphtG0">pic.twitter.com/XlofmphtG0</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/915517775082328067?ref_src=twsrc%5Etfw">October 4, 2017</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Energy efficiency gains made since 2000 have resulted in huge savings on <a href="https://twitter.com/hashtag/energy?src=hash&amp;ref_src=twsrc%5Etfw">#energy</a> bills for consumers, our report shows: <a href="https://t.co/smZMJ7PnJz">https://t.co/smZMJ7PnJz</a> <a href="https://t.co/LbWWsivaWf">pic.twitter.com/LbWWsivaWf</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/960801604273364992?ref_src=twsrc%5Etfw">February 6, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Renewables account for 26% of electricity consumption of electric vehicles today. This is set to rise to 30% by 2022 <a href="https://t.co/myfiNA0vKU">https://t.co/myfiNA0vKU</a> <a href="https://t.co/aS9zoRPFCh">pic.twitter.com/aS9zoRPFCh</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/962687971756531712?ref_src=twsrc%5Etfw">February 11, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Achieving universal access to modern energy by 2030, in numbers:<br><br>✅ 1.9% increase in global energy investment required ($31bn/yr) <br>✅ 1.8m deaths avoided each year <br>✅ 2 months of work saved per woman every year<br>✅ 0% increase in GHG emissions<br><br>Learn more <a href="https://t.co/mnP46MZ0aR">https://t.co/mnP46MZ0aR</a> <a href="https://t.co/5oQw1pwbAD">pic.twitter.com/5oQw1pwbAD</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/1010132708029353984?ref_src=twsrc%5Etfw">June 22, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Our model shows how night sky over Africa will look by 2030 compared to today, if universal <a href="https://twitter.com/hashtag/energy?src=hash&amp;ref_src=twsrc%5Etfw">#energy</a> access achieved <a href="https://t.co/TzrVK6CpOl">https://t.co/TzrVK6CpOl</a> <a href="https://t.co/7c6weTJ7ak">pic.twitter.com/7c6weTJ7ak</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/920932851184558082?ref_src=twsrc%5Etfw">October 19, 2017</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Decarbonization?src=hash&amp;ref_src=twsrc%5Etfw">#Decarbonization</a> of new power generation needs to accelerate to meet <a href="https://twitter.com/hashtag/ParisAgreement?src=hash&amp;ref_src=twsrc%5Etfw">#ParisAgreement</a> goals <a href="https://t.co/OFS4LCAW8R">https://t.co/OFS4LCAW8R</a> <a href="https://t.co/LumIPRH2zy">pic.twitter.com/LumIPRH2zy</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/819531931947769857?ref_src=twsrc%5Etfw">January 12, 2017</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">In 2016, the world would have used 12% more energy had it not been for energy efficiency improvements since 2000 – equivalent to adding another EU in the global energy market <a href="https://t.co/wRoCgduFUJ">https://t.co/wRoCgduFUJ</a> <a href="https://t.co/qefQx8y4eY">pic.twitter.com/qefQx8y4eY</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/980384349030887429?ref_src=twsrc%5Etfw">April 1, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Decarbonization?src=hash&amp;ref_src=twsrc%5Etfw">#Decarbonization</a> of new power generation needs to accelerate to meet <a href="https://twitter.com/hashtag/ParisAgreement?src=hash&amp;ref_src=twsrc%5Etfw">#ParisAgreement</a> goals <a href="https://t.co/OFS4LCAW8R">https://t.co/OFS4LCAW8R</a> <a href="https://t.co/LumIPRH2zy">pic.twitter.com/LumIPRH2zy</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/819531931947769857?ref_src=twsrc%5Etfw">January 12, 2017</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="column">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Decarbonization?src=hash&amp;ref_src=twsrc%5Etfw">#Decarbonization</a> of new power generation needs to accelerate to meet <a href="https://twitter.com/hashtag/ParisAgreement?src=hash&amp;ref_src=twsrc%5Etfw">#ParisAgreement</a> goals <a href="https://t.co/OFS4LCAW8R">https://t.co/OFS4LCAW8R</a> <a href="https://t.co/LumIPRH2zy">pic.twitter.com/LumIPRH2zy</a></p>&mdash; IEA (@IEA) <a href="https://twitter.com/IEA/status/819531931947769857?ref_src=twsrc%5Etfw">January 12, 2017</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        </div>
+      </div>
+    </div>
+      <div id="tab2" class="tab_content">
+        <div class="columns">
+          <div class="column">
+<a href="https://www.youtube.com/watch?v=XSGBVzeBUbk" data-lity>iFrame Youtube</a>
+          </div>
+          <div class="column">
+            <h1>World Energy Outlook 2018</h1>
+            <p>Some text here explaining what the video is</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            Photo
+          </div>
+          <div class="column">
+            Text
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            Photo
+          </div>
+          <div class="column">
+            Text
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            Photo
+          </div>
+          <div class="column">
+            Text
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            Photo
+          </div>
+          <div class="column">
+            Text
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            Photo
+          </div>
+          <div class="column">
+            Text
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            Photo
+          </div>
+          <div class="column">
+            Text
+          </div>
+        </div>
+  </div>
+  </div>
+    </div>
+  </section>
+  </body>
+</html>
