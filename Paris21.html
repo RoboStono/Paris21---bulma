@@ -5,27 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paris21 Application</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link href="dist/lity.css" rel="stylesheet">
-    <script src="dist/lity.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function($) {
-  $('.tab_content').hide();
-  $('.tab_content:first').show();
-  $('.tabs li:first').addClass('is-active');
-  $('.tabs li').click(function(event) {
-  event.preventDefault();
-    $('.tabs li').removeClass('is-active');
-    $(this).addClass('is-active');
-    $('.tab_content').hide();
-    var selectTab = $(this).find('a').attr("href");
-    $(selectTab).fadeIn();
-    e.preventDefault();
-  });
-});
-</script>
+    <script async src="dist/lity.js"></script>
   </head>
   <body>
   <section class="section">
@@ -416,5 +399,21 @@ $(document).ready(function($) {
 </div>
 </div>
   </section>
+  <script>
+  $(document).ready(function($) {
+    $('.tab_content').hide();
+    $('.tab_content:first').show();
+    $('.tabs li:first').addClass('is-active');
+    $('.tabs li').click(function(event) {
+    event.preventDefault();
+      $('.tabs li').removeClass('is-active');
+      $(this).addClass('is-active');
+      $('.tab_content').hide();
+      var selectTab = $(this).find('a').attr("href");
+      $(selectTab).fadeIn();
+      e.preventDefault();
+    });
+  });
+  </script>
   </body>
 </html>
